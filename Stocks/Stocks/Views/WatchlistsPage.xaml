@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stocks.Views.WatchlistsPage"
+             Title="WatchlistsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{Binding CurrentWatchlist.Name}" Priority="0" />
+        <ToolbarItem Text="Search" Clicked="Search_Clicked" IconImageSource="search_icon.svg"  />
+    </ContentPage.ToolbarItems>
+    
+    <VerticalStackLayout>
+
+        <CollectionView x:Name="currentWatchlistCollection"
+                ItemsSource="{Binding Watchlist}"
+                Margin="20"
+                SelectionMode="Single"
+                SelectionChanged="currentWatchlistCollection_SelectionChanged">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Text}" FontSize="22"/>
+                        <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+    </VerticalStackLayout>
+    
+    
+</ContentPage>
