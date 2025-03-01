@@ -11,10 +11,10 @@ public partial class WatchlistsPage : ContentPage
 
     protected override void OnAppearing()
     {
-        //if (((Models.Watchlists)BindingContext).watchlists.Count == 0)
-        //    titleLabel.Title = "Watchlists";
-        //else
-        //    titleLabel.Title = ((Models.Watchlists)BindingContext).watchlists[0].Name;
+        if (((Models.Watchlists)BindingContext).watchlists.Count < 1)
+            WatchlistsContentPage.Title = "Watchlists";
+        else
+            WatchlistsContentPage.Title = ((Models.Watchlists)BindingContext).watchlists[0].Name;
     }
 
     private async void Search_Clicked(object sender, EventArgs e)
@@ -29,7 +29,7 @@ public partial class WatchlistsPage : ContentPage
         {
             var stock = (Models.Stock)e.CurrentSelection[0];
 
-            await Shell.Current.GoToAsync($"{nameof(StockPage)}?NVDA");
+            await Shell.Current.GoToAsync($"{nameof(StockPage)}?{stock}");
 
             //currentWatchlistCollection.SelectedItem = null;
         }

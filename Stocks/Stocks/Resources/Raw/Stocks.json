@@ -1,0 +1,374 @@
+[
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc."
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corporation"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corporation"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com, Inc."
+  },
+  {
+    "ticker": "GOOGL",
+    "company": "Alphabet Inc. (Class A)"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc. (Class C)"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms, Inc."
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc."
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla, Inc."
+  },
+  {
+    "ticker": "BRK.B",
+    "company": "Berkshire Hathaway Inc."
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Incorporated"
+  },
+  {
+    "ticker": "JNJ",
+    "company": "Johnson & Johnson"
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMorgan Chase & Co."
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc."
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble Company"
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Incorporated"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot, Inc."
+  },
+  {
+    "ticker": "PFE",
+    "company": "Pfizer Inc."
+  },
+  {
+    "ticker": "CVX",
+    "company": "Chevron Corporation"
+  },
+  {
+    "ticker": "ABBV",
+    "company": "AbbVie Inc."
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly and Company"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo, Inc."
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Company"
+  },
+  {
+    "ticker": "MRK",
+    "company": "Merck & Co., Inc."
+  },
+  {
+    "ticker": "DIS",
+    "company": "Walt Disney Company"
+  },
+  {
+    "ticker": "INTC",
+    "company": "Intel Corporation"
+  },
+  {
+    "ticker": "CSCO",
+    "company": "Cisco Systems, Inc."
+  },
+  {
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc."
+  },
+  {
+    "ticker": "T",
+    "company": "AT&T Inc."
+  },
+  {
+    "ticker": "XOM",
+    "company": "Exxon Mobil Corporation"
+  },
+  {
+    "ticker": "WMT",
+    "company": "Walmart Inc."
+  },
+  {
+    "ticker": "BAC",
+    "company": "Bank of America Corporation"
+  },
+  {
+    "ticker": "C",
+    "company": "Citigroup Inc."
+  },
+  {
+    "ticker": "WFC",
+    "company": "Wells Fargo & Company"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc."
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce, Inc."
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix, Inc."
+  },
+  {
+    "ticker": "PYPL",
+    "company": "PayPal Holdings, Inc."
+  },
+  {
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices, Inc."
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm Incorporated"
+  },
+  {
+    "ticker": "TXN",
+    "company": "Texas Instruments Incorporated"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corporation"
+  },
+  {
+    "ticker": "IBM",
+    "company": "IBM Corporation"
+  },
+  {
+    "ticker": "ACN",
+    "company": "Accenture plc"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corporation"
+  },
+  {
+    "ticker": "UNP",
+    "company": "Union Pacific Corporation"
+  },
+  {
+    "ticker": "HON",
+    "company": "Honeywell International Inc."
+  },
+  {
+    "ticker": "MMM",
+    "company": "3M Company"
+  },
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc."
+  },
+  {
+    "ticker": "BA",
+    "company": "Boeing Company"
+  },
+  {
+    "ticker": "LMT",
+    "company": "Lockheed Martin Corporation"
+  },
+  {
+    "ticker": "GE",
+    "company": "General Electric Company"
+  },
+  {
+    "ticker": "RTX",
+    "company": "Raytheon Technologies Corporation"
+  },
+  {
+    "ticker": "NOC",
+    "company": "Northrop Grumman Corporation"
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corporation"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corporation"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike, Inc."
+  },
+  {
+    "ticker": "LOW",
+    "company": "Lowe's Companies, Inc."
+  },
+  {
+    "ticker": "TGT",
+    "company": "Target Corporation"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corporation"
+  },
+  {
+    "ticker": "CVS",
+    "company": "CVS Health Corporation"
+  },
+  {
+    "ticker": "WBA",
+    "company": "Walgreens Boots Alliance, Inc."
+  },
+  {
+    "ticker": "MRNA",
+    "company": "Moderna, Inc."
+  },
+  {
+    "ticker": "ZM",
+    "company": "Zoom Video Communications, Inc."
+  },
+  {
+    "ticker": "SQ",
+    "company": "Block, Inc. (Square)"
+  },
+  {
+    "ticker": "SHOP",
+    "company": "Shopify Inc."
+  },
+  {
+    "ticker": "UBER",
+    "company": "Uber Technologies, Inc."
+  },
+  {
+    "ticker": "LYFT",
+    "company": "Lyft, Inc."
+  },
+  {
+    "ticker": "SNAP",
+    "company": "Snap Inc."
+  },
+  {
+    "ticker": "PINS",
+    "company": "Pinterest, Inc."
+  },
+  {
+    "ticker": "ROKU",
+    "company": "Roku, Inc."
+  },
+  {
+    "ticker": "PTON",
+    "company": "Peloton Interactive, Inc."
+  },
+  {
+    "ticker": "DKNG",
+    "company": "DraftKings Inc."
+  },
+  {
+    "ticker": "BYND",
+    "company": "Beyond Meat, Inc."
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc."
+  },
+  {
+    "ticker": "PLTR",
+    "company": "Palantir Technologies Inc."
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc."
+  },
+  {
+    "ticker": "OKTA",
+    "company": "Okta, Inc."
+  },
+  {
+    "ticker": "ZS",
+    "company": "Zscaler, Inc."
+  },
+  {
+    "ticker": "DDOG",
+    "company": "Datadog, Inc."
+  },
+  {
+    "ticker": "MDB",
+    "company": "MongoDB, Inc."
+  },
+  {
+    "ticker": "TEAM",
+    "company": "Atlassian Corporation"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow, Inc."
+  },
+  {
+    "ticker": "WDAY",
+    "company": "Workday, Inc."
+  },
+  {
+    "ticker": "SPLK",
+    "company": "Splunk Inc."
+  },
+  {
+    "ticker": "DOCU",
+    "company": "DocuSign, Inc."
+  },
+  {
+    "ticker": "RNG",
+    "company": "RingCentral, Inc."
+  },
+  {
+    "ticker": "TWLO",
+    "company": "Twilio Inc."
+  },
+  {
+    "ticker": "NET",
+    "company": "Cloudflare, Inc."
+  },
+  {
+    "ticker": "FSLY",
+    "company": "Fastly, Inc."
+  },
+  {
+    "ticker": "LMND",
+    "company": "Lemonade, Inc."
+  },
+  {
+    "ticker": "SOFI",
+    "company": "SoFi Technologies, Inc."
+  },
+  {
+    "ticker": "HOOD",
+    "company": "Robinhood Markets, Inc."
+  }
+]

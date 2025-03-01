@@ -1,9 +1,15 @@
-﻿namespace Stocks
+﻿using Stocks.Services;
+
+namespace Stocks
 {
     public partial class App : Application
     {
-        public App()
+        public static IDataLoader DataLoader;
+
+        public App(System.IServiceProvider services)
         {
+            DataLoader = services.GetService<IDataLoader>();
+
             InitializeComponent();
         }
 

@@ -4,14 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:Stocks.Views"
+    BackgroundColor="DarkSlateBlue"
+    Shell.TitleColor="White"
+    Shell.ForegroundColor="White"
     Shell.FlyoutBehavior="Flyout"
-    Title="Stocks">
+    Shell.TabBarBackgroundColor="DarkSlateBlue"
+    Shell.TabBarForegroundColor="#f8f7ff"
+    Shell.TabBarUnselectedColor="#f8f7ff"
+    Shell.TabBarTitleColor="#f0fccc"
+    >
 
     <TabBar>
         <ShellContent
         Title="Watchlists"   
         ContentTemplate="{DataTemplate views:WatchlistsPage}"
-        Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+        Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}"/>
 
         <ShellContent
         Title="Markets"

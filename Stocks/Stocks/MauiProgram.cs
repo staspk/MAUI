@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using Stocks.Services;
+using System.Data;
 
 namespace Stocks
 {
@@ -9,6 +11,7 @@ namespace Stocks
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .RegisterServices()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -16,10 +19,17 @@ namespace Stocks
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
+        }
+
+        public static MauiAppBuilder RegisterServices(this MauiAppBuilder builder)
+        {
+            builder.Services.AddSingleton<IDataLoader, DataLoader>();
+
+            return builder;
         }
     }
 }

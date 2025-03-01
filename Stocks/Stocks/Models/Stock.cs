@@ -1,19 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 
 namespace Stocks.Models
 {
-    internal class Stock
+    public class Stock
     {
         public string Ticker { get; set; }
+        public string Company { get; set; }
         public float Price { get; set; }
 
-        public Stock(string Ticker)
+        public Stock(string ticker, string company)
         {
-            this.Ticker = Ticker;
+            Ticker = ticker;
+            Company = company;
         }
+
+        //public Dictionary<string, Stock> ConstructStockDictionary(JsonDocument json)
+        //{
+        //    Dictionary<string, Stock> stockDict = new Dictionary<string, Stock>();
+
+        //    using(var stockJson )
+        //}
     }
 }

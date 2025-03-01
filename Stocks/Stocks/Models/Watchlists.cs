@@ -9,7 +9,7 @@ namespace Stocks.Models
 {
     internal class Watchlists
     {
-        private static readonly string WATCHLISTS_DIR = Path.Combine(FileSystem.AppDataDirectory, "Watchlists");
+        private static readonly string WATCHLISTS_DIR = Definitions.WATCHLISTS_DIR;
         public List<Watchlist> watchlists { get; set; }
         public ObservableCollection<Stock> CurrentWatchlist { get; set; } = new ObservableCollection<Stock>();
 
@@ -23,12 +23,14 @@ namespace Stocks.Models
         {
             CurrentWatchlist.Clear();
 
+            var stocks = ((AppShell)Shell.Current).Stocks;
+
             Watchlists.LoadSavedWatchlists();
             if (watchlists.Count > 0)
             {
-                foreach (string stock in watchlists[0].Stocks)
+                foreach (string ticker in watchlists[0].Stocks)
                 {
-                    CurrentWatchlist.Add(new Stock(stock));
+                    CurrentWatchlist.Add(stocks.First(stock => stock.Ticker == ticker.ToUpper()));
                 }
             }
         }
