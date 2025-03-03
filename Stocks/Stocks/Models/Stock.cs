@@ -6,7 +6,8 @@ namespace Stocks.Models
     {
         public string Ticker { get; set; }
         public string Company { get; set; }
-        public float Price { get; set; }
+        public float? Price { get; set; }
+        public string? ImageFileName { get; set; }
 
         public Stock(string ticker, string company)
         {

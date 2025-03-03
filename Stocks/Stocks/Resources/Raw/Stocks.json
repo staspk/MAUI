@@ -1,374 +1,374 @@
 [
   {
-    "ticker": "AAPL",
-    "company": "Apple Inc."
+    "Ticker": "AAPL",
+    "Company": "Apple Inc"
   },
   {
-    "ticker": "NVDA",
-    "company": "NVIDIA Corporation"
+    "Ticker": "NVDA",
+    "Company": "NVIDIA Corp"
   },
   {
-    "ticker": "MSFT",
-    "company": "Microsoft Corporation"
+    "Ticker": "MSFT",
+    "Company": "Microsoft Corp"
   },
   {
-    "ticker": "AMZN",
-    "company": "Amazon.com, Inc."
+    "Ticker": "AMZN",
+    "Company": "Amazoncom, Inc"
   },
   {
-    "ticker": "GOOGL",
-    "company": "Alphabet Inc. (Class A)"
+    "Ticker": "GOOGL",
+    "Company": "Alphabet Inc (A)"
   },
   {
-    "ticker": "GOOG",
-    "company": "Alphabet Inc. (Class C)"
+    "Ticker": "GOOG",
+    "Company": "Alphabet Inc (C)"
   },
   {
-    "ticker": "META",
-    "company": "Meta Platforms, Inc."
+    "Ticker": "META",
+    "Company": "Meta Platforms, Inc"
   },
   {
-    "ticker": "AVGO",
-    "company": "Broadcom Inc."
+    "Ticker": "AVGO",
+    "Company": "Broadcom Inc"
   },
   {
-    "ticker": "TSLA",
-    "company": "Tesla, Inc."
+    "Ticker": "TSLA",
+    "Company": "Tesla, Inc"
   },
   {
-    "ticker": "BRK.B",
-    "company": "Berkshire Hathaway Inc."
+    "Ticker": "BRKB",
+    "Company": "Berkshire Hathaway Inc"
   },
   {
-    "ticker": "UNH",
-    "company": "UnitedHealth Group Incorporated"
+    "Ticker": "UNH",
+    "Company": "UnitedHealth Group Inc"
   },
   {
-    "ticker": "JNJ",
-    "company": "Johnson & Johnson"
+    "Ticker": "JNJ",
+    "Company": "Johnson & Johnson"
   },
   {
-    "ticker": "JPM",
-    "company": "JPMorgan Chase & Co."
+    "Ticker": "JPM",
+    "Company": "JPMorgan Chase"
   },
   {
-    "ticker": "V",
-    "company": "Visa Inc."
+    "Ticker": "V",
+    "Company": "Visa Inc"
   },
   {
-    "ticker": "PG",
-    "company": "Procter & Gamble Company"
+    "Ticker": "PG",
+    "Company": "Procter & Gamble"
   },
   {
-    "ticker": "MA",
-    "company": "Mastercard Incorporated"
+    "Ticker": "MA",
+    "Company": "Mastercard Inc"
   },
   {
-    "ticker": "HD",
-    "company": "Home Depot, Inc."
+    "Ticker": "HD",
+    "Company": "Home Depot, Inc"
   },
   {
-    "ticker": "PFE",
-    "company": "Pfizer Inc."
+    "Ticker": "PFE",
+    "Company": "Pfizer Inc"
   },
   {
-    "ticker": "CVX",
-    "company": "Chevron Corporation"
+    "Ticker": "CVX",
+    "Company": "Chevron Corp"
   },
   {
-    "ticker": "ABBV",
-    "company": "AbbVie Inc."
+    "Ticker": "ABBV",
+    "Company": "AbbVie Inc"
   },
   {
-    "ticker": "LLY",
-    "company": "Eli Lilly and Company"
+    "Ticker": "LLY",
+    "Company": "Eli Lilly & Comp"
   },
   {
-    "ticker": "PEP",
-    "company": "PepsiCo, Inc."
+    "Ticker": "PEP",
+    "Company": "PepsiCo, Inc"
   },
   {
-    "ticker": "KO",
-    "company": "Coca-Cola Company"
+    "Ticker": "KO",
+    "Company": "Coca-Cola Comp"
   },
   {
-    "ticker": "MRK",
-    "company": "Merck & Co., Inc."
+    "Ticker": "MRK",
+    "Company": "Merck & Co, Inc"
   },
   {
-    "ticker": "DIS",
-    "company": "Walt Disney Company"
+    "Ticker": "DIS",
+    "Company": "Walt Disney"
   },
   {
-    "ticker": "INTC",
-    "company": "Intel Corporation"
+    "Ticker": "INTC",
+    "Company": "Intel Corp"
   },
   {
-    "ticker": "CSCO",
-    "company": "Cisco Systems, Inc."
+    "Ticker": "CSCO",
+    "Company": "Cisco Systems, Inc"
   },
   {
-    "ticker": "VZ",
-    "company": "Verizon Communications Inc."
+    "Ticker": "VZ",
+    "Company": "Verizon Communications Inc"
   },
   {
-    "ticker": "T",
-    "company": "AT&T Inc."
+    "Ticker": "T",
+    "Company": "AT&T Inc"
   },
   {
-    "ticker": "XOM",
-    "company": "Exxon Mobil Corporation"
+    "Ticker": "XOM",
+    "Company": "Exxon Mobil Corp"
   },
   {
-    "ticker": "WMT",
-    "company": "Walmart Inc."
+    "Ticker": "WMT",
+    "Company": "Walmart Inc"
   },
   {
-    "ticker": "BAC",
-    "company": "Bank of America Corporation"
+    "Ticker": "BAC",
+    "Company": "Bank of America Corp"
   },
   {
-    "ticker": "C",
-    "company": "Citigroup Inc."
+    "Ticker": "C",
+    "Company": "Citigroup Inc"
   },
   {
-    "ticker": "WFC",
-    "company": "Wells Fargo & Company"
+    "Ticker": "WFC",
+    "Company": "Wells Fargo & Company"
   },
   {
-    "ticker": "ADBE",
-    "company": "Adobe Inc."
+    "Ticker": "ADBE",
+    "Company": "Adobe Inc"
   },
   {
-    "ticker": "CRM",
-    "company": "Salesforce, Inc."
+    "Ticker": "CRM",
+    "Company": "Salesforce, Inc"
   },
   {
-    "ticker": "NFLX",
-    "company": "Netflix, Inc."
+    "Ticker": "NFLX",
+    "Company": "Netflix, Inc"
   },
   {
-    "ticker": "PYPL",
-    "company": "PayPal Holdings, Inc."
+    "Ticker": "PYPL",
+    "Company": "PayPal Holdings, Inc"
   },
   {
-    "ticker": "AMD",
-    "company": "Advanced Micro Devices, Inc."
+    "Ticker": "AMD",
+    "Company": "Advanced Micro Devices, Inc"
   },
   {
-    "ticker": "QCOM",
-    "company": "Qualcomm Incorporated"
+    "Ticker": "QCOM",
+    "Company": "Qualcomm Incd"
   },
   {
-    "ticker": "TXN",
-    "company": "Texas Instruments Incorporated"
+    "Ticker": "TXN",
+    "Company": "Texas Instruments Inc"
   },
   {
-    "ticker": "ORCL",
-    "company": "Oracle Corporation"
+    "Ticker": "ORCL",
+    "Company": "Oracle Corp"
   },
   {
-    "ticker": "IBM",
-    "company": "IBM Corporation"
+    "Ticker": "IBM",
+    "Company": "IBM Corp"
   },
   {
-    "ticker": "ACN",
-    "company": "Accenture plc"
+    "Ticker": "ACN",
+    "Company": "Accenture plc"
   },
   {
-    "ticker": "DHR",
-    "company": "Danaher Corporation"
+    "Ticker": "DHR",
+    "Company": "Danaher Corp"
   },
   {
-    "ticker": "UNP",
-    "company": "Union Pacific Corporation"
+    "Ticker": "UNP",
+    "Company": "Union Pacific Corp"
   },
   {
-    "ticker": "HON",
-    "company": "Honeywell International Inc."
+    "Ticker": "HON",
+    "Company": "Honeywell International Inc"
   },
   {
-    "ticker": "MMM",
-    "company": "3M Company"
+    "Ticker": "MMM",
+    "Company": "3M"
   },
   {
-    "ticker": "CAT",
-    "company": "Caterpillar Inc."
+    "Ticker": "CAT",
+    "Company": "Caterpillar Inc"
   },
   {
-    "ticker": "BA",
-    "company": "Boeing Company"
+    "Ticker": "BA",
+    "Company": "Boeing"
   },
   {
-    "ticker": "LMT",
-    "company": "Lockheed Martin Corporation"
+    "Ticker": "LMT",
+    "Company": "Lockheed Martin Corp"
   },
   {
-    "ticker": "GE",
-    "company": "General Electric Company"
+    "Ticker": "GE",
+    "Company": "General Electric"
   },
   {
-    "ticker": "RTX",
-    "company": "Raytheon Technologies Corporation"
+    "Ticker": "RTX",
+    "Company": "Raytheon Technologies Corp"
   },
   {
-    "ticker": "NOC",
-    "company": "Northrop Grumman Corporation"
+    "Ticker": "NOC",
+    "Company": "Northrop Grumman Corp"
   },
   {
-    "ticker": "SBUX",
-    "company": "Starbucks Corporation"
+    "Ticker": "SBUX",
+    "Company": "Starbucks Corp"
   },
   {
-    "ticker": "MCD",
-    "company": "McDonald's Corporation"
+    "Ticker": "MCD",
+    "Company": "McDonald's Corp"
   },
   {
-    "ticker": "NKE",
-    "company": "Nike, Inc."
+    "Ticker": "NKE",
+    "Company": "Nike, Inc"
   },
   {
-    "ticker": "LOW",
-    "company": "Lowe's Companies, Inc."
+    "Ticker": "LOW",
+    "Company": "Lowe's Companies, Inc"
   },
   {
-    "ticker": "TGT",
-    "company": "Target Corporation"
+    "Ticker": "TGT",
+    "Company": "Target Corp"
   },
   {
-    "ticker": "COST",
-    "company": "Costco Wholesale Corporation"
+    "Ticker": "COST",
+    "Company": "Costco Wholesale Corp"
   },
   {
-    "ticker": "CVS",
-    "company": "CVS Health Corporation"
+    "Ticker": "CVS",
+    "Company": "CVS Health Corp"
   },
   {
-    "ticker": "WBA",
-    "company": "Walgreens Boots Alliance, Inc."
+    "Ticker": "WBA",
+    "Company": "Walgreens Boots Alliance, Inc"
   },
   {
-    "ticker": "MRNA",
-    "company": "Moderna, Inc."
+    "Ticker": "MRNA",
+    "Company": "Moderna, Inc"
   },
   {
-    "ticker": "ZM",
-    "company": "Zoom Video Communications, Inc."
+    "Ticker": "ZM",
+    "Company": "Zoom Video Communications, Inc"
   },
   {
-    "ticker": "SQ",
-    "company": "Block, Inc. (Square)"
+    "Ticker": "SQ",
+    "Company": "Block, Inc (Square)"
   },
   {
-    "ticker": "SHOP",
-    "company": "Shopify Inc."
+    "Ticker": "SHOP",
+    "Company": "Shopify Inc"
   },
   {
-    "ticker": "UBER",
-    "company": "Uber Technologies, Inc."
+    "Ticker": "UBER",
+    "Company": "Uber Technologies, Inc"
   },
   {
-    "ticker": "LYFT",
-    "company": "Lyft, Inc."
+    "Ticker": "LYFT",
+    "Company": "Lyft, Inc"
   },
   {
-    "ticker": "SNAP",
-    "company": "Snap Inc."
+    "Ticker": "SNAP",
+    "Company": "Snap Inc"
   },
   {
-    "ticker": "PINS",
-    "company": "Pinterest, Inc."
+    "Ticker": "PINS",
+    "Company": "Pinterest, Inc"
   },
   {
-    "ticker": "ROKU",
-    "company": "Roku, Inc."
+    "Ticker": "ROKU",
+    "Company": "Roku, Inc"
   },
   {
-    "ticker": "PTON",
-    "company": "Peloton Interactive, Inc."
+    "Ticker": "PTON",
+    "Company": "Peloton Interactive, Inc"
   },
   {
-    "ticker": "DKNG",
-    "company": "DraftKings Inc."
+    "Ticker": "DKNG",
+    "Company": "DraftKings Inc"
   },
   {
-    "ticker": "BYND",
-    "company": "Beyond Meat, Inc."
+    "Ticker": "BYND",
+    "Company": "Beyond Meat, Inc"
   },
   {
-    "ticker": "SNOW",
-    "company": "Snowflake Inc."
+    "Ticker": "SNOW",
+    "Company": "Snowflake Inc"
   },
   {
-    "ticker": "PLTR",
-    "company": "Palantir Technologies Inc."
+    "Ticker": "PLTR",
+    "Company": "Palantir Technologies Inc"
   },
   {
-    "ticker": "CRWD",
-    "company": "CrowdStrike Holdings, Inc."
+    "Ticker": "CRWD",
+    "Company": "CrowdStrike Holdings, Inc"
   },
   {
-    "ticker": "OKTA",
-    "company": "Okta, Inc."
+    "Ticker": "OKTA",
+    "Company": "Okta, Inc"
   },
   {
-    "ticker": "ZS",
-    "company": "Zscaler, Inc."
+    "Ticker": "ZS",
+    "Company": "Zscaler, Inc"
   },
   {
-    "ticker": "DDOG",
-    "company": "Datadog, Inc."
+    "Ticker": "DDOG",
+    "Company": "Datadog, Inc"
   },
   {
-    "ticker": "MDB",
-    "company": "MongoDB, Inc."
+    "Ticker": "MDB",
+    "Company": "MongoDB, Inc"
   },
   {
-    "ticker": "TEAM",
-    "company": "Atlassian Corporation"
+    "Ticker": "TEAM",
+    "Company": "Atlassian Corp"
   },
   {
-    "ticker": "NOW",
-    "company": "ServiceNow, Inc."
+    "Ticker": "NOW",
+    "Company": "ServiceNow, Inc"
   },
   {
-    "ticker": "WDAY",
-    "company": "Workday, Inc."
+    "Ticker": "WDAY",
+    "Company": "Workday, Inc"
   },
   {
-    "ticker": "SPLK",
-    "company": "Splunk Inc."
+    "Ticker": "SPLK",
+    "Company": "Splunk Inc"
   },
   {
-    "ticker": "DOCU",
-    "company": "DocuSign, Inc."
+    "Ticker": "DOCU",
+    "Company": "DocuSign, Inc"
   },
   {
-    "ticker": "RNG",
-    "company": "RingCentral, Inc."
+    "Ticker": "RNG",
+    "Company": "RingCentral, Inc"
   },
   {
-    "ticker": "TWLO",
-    "company": "Twilio Inc."
+    "Ticker": "TWLO",
+    "Company": "Twilio Inc"
   },
   {
-    "ticker": "NET",
-    "company": "Cloudflare, Inc."
+    "Ticker": "NET",
+    "Company": "Cloudflare, Inc"
   },
   {
-    "ticker": "FSLY",
-    "company": "Fastly, Inc."
+    "Ticker": "FSLY",
+    "Company": "Fastly, Inc"
   },
   {
-    "ticker": "LMND",
-    "company": "Lemonade, Inc."
+    "Ticker": "LMND",
+    "Company": "Lemonade, Inc"
   },
   {
-    "ticker": "SOFI",
-    "company": "SoFi Technologies, Inc."
+    "Ticker": "SOFI",
+    "Company": "SoFi Technologies"
   },
   {
-    "ticker": "HOOD",
-    "company": "Robinhood Markets, Inc."
+    "Ticker": "HOOD",
+    "Company": "Robinhood Markets"
   }
 ]

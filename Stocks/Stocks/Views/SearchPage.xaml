@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Stocks.Models"
+             xmlns:controls="clr-namespace:Stocks.Controls"
              x:Class="Stocks.Views.SearchPage"
              Title="SearchPage"
-             Shell.NavBarIsVisible="false"
-             BackgroundColor="#f8f7ff"
+             BackgroundColor="#2a2e36"
+             Shell.NavBarIsVisible="False"
              >
 
+
     <VerticalStackLayout>
+
+        
 
         <!--<HorizontalStackLayout>
             <SearchBar Placeholder="Symbol/Company Name"  />
             <Label Text="cancel" />
         </HorizontalStackLayout>-->
 
-        <HorizontalStackLayout Spacing="5" BackgroundColor="DarkSlateBlue" WidthRequest="380" HeightRequest="50" VerticalOptions="Start" >
-            <BoxView BackgroundColor="DarkSlateBlue" WidthRequest="20"></BoxView>
+        <HorizontalStackLayout Spacing="5" BackgroundColor="#282c34" WidthRequest="380" HeightRequest="57" VerticalOptions="Start" >
+            <BoxView BackgroundColor="#282c34" WidthRequest="20"></BoxView>
             
             <Border StrokeShape="RoundRectangle 14,14,14,14" StrokeThickness="1" WidthRequest="260" HeightRequest="40">
                 <SearchBar x:Name="SearchBar" Placeholder=" Symbol / Company Name" TextChanged="OnTextChanged" BackgroundColor="White" CancelButtonColor="DimGray" />
             </Border>
 
-            <BoxView BackgroundColor="DarkSlateBlue" WidthRequest="0"></BoxView>
+            <BoxView BackgroundColor="#282c34" WidthRequest="0"></BoxView>
 
             <Label Text="CANCEL" TextColor="Red" VerticalTextAlignment="Center" FontAttributes="Bold">
                 <Label.GestureRecognizers>
@@ -30,16 +35,54 @@
             </Label>
             
         </HorizontalStackLayout>
-        
+
+        <!--border-->
+        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="3" />
+        <FlexLayout Direction="Row" BackgroundColor="#343a45" HeightRequest="1" />
+        <!--border-->
+
+        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="1" />
         
 
+        <FlexLayout Direction="Row" AlignItems="Center" Margin="0,10,0,10" Padding="10" BackgroundColor="#272b32">
+            <Image Source="nvda.png" Margin="8,0,0,0" HeightRequest="50" WidthRequest="50" />
 
-        <HorizontalStackLayout>
-            <Label Text="HISTORY" FontFamily="" VerticalOptions="Center" HorizontalOptions="Start" Padding="30" FontSize="16" FontAttributes="Bold" />
-            
-        </HorizontalStackLayout>
+            <Label Margin="8,0,2,0" Text="NVDA" FontSize="15" FontAttributes="Bold" TextColor="FloralWhite" />
+
+            <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+
+            <Image Source="add_favorite_empty.png" Margin="0,0,10,0" HeightRequest="25" WidthRequest="25" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFavorite_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </FlexLayout>
 
         
+        <ListView x:Name="searchResultsList"
+              BackgroundColor="DarkSlateBlue">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:Stock">
+                    <FlexLayout Direction="Row" AlignItems="Center" Margin="0,10,0,10" Padding="10" BackgroundColor="#272b32">
+                        <Image Source="{Binding ImageFileName}" Margin="8,0,0,0" HeightRequest="50" WidthRequest="50" />
+
+                        <Label Margin="8,0,2,0" Text="{Binding Ticker}" FontSize="15" FontAttributes="Bold" TextColor="FloralWhite" />
+
+                        <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+
+                        <Image Source="add_favorite_empty.png" Margin="0,0,10,0" HeightRequest="25" WidthRequest="25" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnFavorite_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </FlexLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
 
         <!--<Label Text="History" VerticalOptions="Center" HorizontalOptions="Center" />-->
 

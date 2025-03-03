@@ -20,7 +20,7 @@ namespace Stocks.Services
             {
                 using var stream = await FileSystem.OpenAppPackageFileAsync(file);
 
-                return await JsonSerializer.DeserializeAsync<IList<Stock>>(stream);
+                return JsonSerializer.Deserialize<IList<Stock>>(stream);
             }
             catch(Exception ex)
             {
