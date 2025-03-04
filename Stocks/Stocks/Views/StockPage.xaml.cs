@@ -9,8 +9,6 @@ public partial class StockPage : ContentPage
 {
     private Stock Stock { get; set; }
 
-    private bool _isActive;
-
     public string Ticker
     {
         set
@@ -28,19 +26,11 @@ public partial class StockPage : ContentPage
     protected async override void OnAppearing()
     {
         base.OnAppearing();
-        _isActive = true;
 
-        Dispatcher.StartTimer(TimeSpan.FromSeconds(5), () =>
-        {
-            LoadStock(Stock.Ticker);
-            
-            return _isActive;
-        });
     }
     protected async override void OnDisappearing()
     {
         base.OnDisappearing();
-        _isActive = false;
     }
 
     private async Task LoadStock(string ticker)
@@ -184,6 +174,6 @@ public partial class StockPage : ContentPage
 
     async void Back_Tapped(object sender, TappedEventArgs args)
     {
-        await Shell.Current.GoToAsync(nameof(WatchlistsPage));
+        await Shell.Current.GoToAsync("..");
     }
 }

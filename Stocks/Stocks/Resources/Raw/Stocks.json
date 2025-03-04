@@ -1,13 +1,11 @@
 [
   {
     "Ticker": "AAPL",
-    "Company": "Apple Inc",
-    "ImageFileName": "aapl.png"
+    "Company": "Apple Inc"
   },
   {
     "Ticker": "NVDA",
-    "Company": "Nvidia Corporation",
-    "ImageFileName": "nvda.png"
+    "Company": "Nvidia Corporation"
   },
   {
     "Ticker": "MSFT",
@@ -15,7 +13,7 @@
   },
   {
     "Ticker": "AMZN",
-    "Company": "Amazoncom, Inc"
+    "Company": "Amazon.com, Inc"
   },
   {
     "Ticker": "GOOGL",

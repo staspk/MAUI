@@ -77,6 +77,14 @@ public partial class SearchPage : ContentPage
         {
             Console.WriteLine($"Favorite tapped for: {tappedStock.Ticker}");
         }
+
+        var image = sender as Image;
+
+        string currentImageSource = ((FileImageSource)image.Source).File;
+        if (currentImageSource == "add_favorite_empty.png")
+            ((FileImageSource)image.Source).File = "remove_favorite.png";
+        else
+            ((FileImageSource)image.Source).File = "add_favorite_empty.png";
     }
 
     private FlexLayout ConstructRow(Stock stock)
