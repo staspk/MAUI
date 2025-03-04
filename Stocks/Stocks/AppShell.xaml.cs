@@ -10,8 +10,6 @@ namespace Stocks
     {
         public IList<Stock> Stocks { get; set; }
 
-        
-
         public AppShell()       //((AppShell)App.Current)
         {
             InitializeComponent();
@@ -20,11 +18,9 @@ namespace Stocks
 
             BindingContext = this;
 
+            Routing.RegisterRoute(nameof(Views.WatchlistsPage), typeof(Views.WatchlistsPage));
             Routing.RegisterRoute(nameof(Views.SearchPage), typeof(Views.SearchPage));
-
-            
-
-
+            Routing.RegisterRoute(nameof(Views.StockPage), typeof(Views.StockPage));
         }
 
         protected async override void OnAppearing()
@@ -38,5 +34,7 @@ namespace Stocks
         {
             await Shell.Current.GoToAsync(nameof(SearchPage));
         }
+
+        
     }
 }

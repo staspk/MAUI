@@ -12,7 +12,25 @@
     Shell.TabBarForegroundColor="#f8f7ff"
     Shell.TabBarUnselectedColor="#f8f7ff"
     Shell.TabBarTitleColor="#f0fccc"
+    Shell.FlyoutBackground ="#272b32"
     >
+
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <Label Text="My Watchlists" FontSize="20" FontAttributes="Bold" TextColor="WhiteSmoke" />
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutContent>
+        <VerticalStackLayout MinimumHeightRequest="40" VerticalOptions="Center">
+            <Label x:Name="FLYOUT_WATCHLIST_NAME" Text="NVDA" Margin="6,0,0,0" FontSize="18" FontAttributes="Bold" TextColor="FloralWhite" />
+        </VerticalStackLayout>
+    </Shell.FlyoutContent>
+    
+    
+    <!-- For single actions/commands, use MenuItem -->
+    <MenuItem Text="Settings" />
+    <MenuItem Text="Sign Out" Command="{Binding SignOutCommand}"/>
 
     <TabBar>
         <ShellContent

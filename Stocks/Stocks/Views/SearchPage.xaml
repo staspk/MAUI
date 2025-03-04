@@ -39,28 +39,65 @@
         <!--border-->
         <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="3" />
         <FlexLayout Direction="Row" BackgroundColor="#343a45" HeightRequest="1" />
+        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="1" />
         <!--border-->
 
-        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="1" />
+        <!--<CollectionView x:Name="CollectionView"
+                        ItemsSource="{Binding Stock}" 
+                        SelectionMode="Single" 
+                        SelectionChanged="OnCollectionViewSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Stock">
+                    <FlexLayout Direction="Row" AlignItems="Center" Margin="0,15,0,15" Padding="12" BackgroundColor="#272b32">
+                        <Image Source="{Binding ImageFileName}" Margin="8,0,0,1" HeightRequest="50" WidthRequest="50"  />
+
+                        <Label Margin="10,0,2,0" Text="{Binding Ticker}" FontSize="16" FontAttributes="Bold" TextColor="FloralWhite" />
+
+                        <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+
+                        <Image Source="add_favorite_empty.png" Margin="0,0,10,0" HeightRequest="25" WidthRequest="25" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnFavorite_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </FlexLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            --><!-- Optional: Show this if there are no items in ItemsSource --><!--
+            <CollectionView.EmptyView>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="No items found!" />
+                </StackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>-->
+
+        <VerticalStackLayout x:Name="SEARCH_RESULTS_REGION">
+
+        <!--<FlexLayout Direction="Row" AlignItems="Center" Margin="0,15,0,15" Padding="12" BackgroundColor="#272b32">
+
+                <Image Source="nvda.png" Margin="8,0,0,1" HeightRequest="50" WidthRequest="50"  />
+
+                <Label Margin="10,0,2,0" Text="NVDA" FontSize="16" FontAttributes="Bold" TextColor="FloralWhite" />
+
+                <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+
+                <Image Source="add_favorite_empty.png" Margin="0,0,10,0" HeightRequest="25" WidthRequest="25" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnFavorite_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </FlexLayout>-->
+
+        </VerticalStackLayout>
+
+
         
-
-        <FlexLayout Direction="Row" AlignItems="Center" Margin="0,10,0,10" Padding="10" BackgroundColor="#272b32">
-            <Image Source="nvda.png" Margin="8,0,0,0" HeightRequest="50" WidthRequest="50" />
-
-            <Label Margin="8,0,2,0" Text="NVDA" FontSize="15" FontAttributes="Bold" TextColor="FloralWhite" />
-
-            <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
-
-
-            <Image Source="add_favorite_empty.png" Margin="0,0,10,0" HeightRequest="25" WidthRequest="25" >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnFavorite_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
-        </FlexLayout>
-
         
-        <ListView x:Name="searchResultsList"
+        <!--Can't get this to work for some reason-->
+        <!--<ListView x:Name="searchResultsList"
               BackgroundColor="DarkSlateBlue">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:Stock">
@@ -80,15 +117,7 @@
                     </FlexLayout>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
-
-
-
-        <!--<Label Text="History" VerticalOptions="Center" HorizontalOptions="Center" />-->
-
-
-
-        <ListView x:Name="searchHistory" ItemsSource="{Binding SearchHistory}" BackgroundColor="FloralWhite" />
+        </ListView>-->
 
     </VerticalStackLayout>
     

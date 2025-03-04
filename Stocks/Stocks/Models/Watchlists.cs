@@ -9,40 +9,63 @@ namespace Stocks.Models
 {
     internal class Watchlists
     {
-        private static readonly string WATCHLISTS_DIR = Definitions.WATCHLISTS_DIR;
         public List<Watchlist> watchlists { get; set; }
         public ObservableCollection<Stock> CurrentWatchlist { get; set; } = new ObservableCollection<Stock>();
 
         public Watchlists()
         {
             this.watchlists = LoadSavedWatchlists();
-            LoadCurrentWatchlist();
+
+            if(this.watchlists.Count > 0)
+                LoadWatchlist(this.watchlists[0]);
         }
 
-        private void LoadCurrentWatchlist()
+        private void LoadWatchlist(Watchlist watchlist = null)
         {
             CurrentWatchlist.Clear();
 
             var stocks = ((AppShell)Shell.Current).Stocks;
 
-            Watchlists.LoadSavedWatchlists();
-            if (watchlists.Count > 0)
+            if (watchlist is null && watchlists.Count > 0)
+                watchlist = this.watchlists[0];
+
+            foreach (var stockStr in watchlist.Stocks)
+                CurrentWatchlist.Add(stocks.First(stock => stock.Ticker.ToUpper() == stockStr.ToUpper()));
+        }
+
+        public static void SaveNewWatchlist(Watchlist watchlist)
+        {
+            if (!Directory.Exists(Definitions.WATCHLISTS_DIR))
+                Directory.CreateDirectory(Definitions.WATCHLISTS_DIR);
+
+            int order = 0;
+            foreach (var file in Directory.EnumerateFiles(Definitions.WATCHLISTS_DIR, "*.txt"))
             {
-                foreach (string ticker in watchlists[0].Stocks)
+                var firstLine = File.ReadLines(file).FirstOrDefault();
+                if (order == int.Parse(firstLine))
                 {
-                    CurrentWatchlist.Add(stocks.First(stock => stock.Ticker == ticker.ToUpper()));
+                    order++;
                 }
             }
+
+            watchlist.Order = order;
+
+            File.WriteAllText(
+                Path.Combine(Definitions.WATCHLISTS_DIR, $"{watchlist.Name}.txt"),
+                watchlist.Order.ToString()
+            );
+
+
         }
 
         public static List<Watchlist> LoadSavedWatchlists()
         {
             List<Watchlist> watchlists = new List<Watchlist>();
 
-            if (!Directory.Exists(WATCHLISTS_DIR))
-                Directory.CreateDirectory(WATCHLISTS_DIR);
+            if (!Directory.Exists(Definitions.WATCHLISTS_DIR))
+                Directory.CreateDirectory(Definitions.WATCHLISTS_DIR);
 
-            foreach (var file in Directory.EnumerateFiles(WATCHLISTS_DIR, "*.txt"))
+            foreach (var file in Directory.EnumerateFiles(Definitions.WATCHLISTS_DIR, "*.txt"))
             {
                 var lines = File.ReadAllLines(file).ToList();
                 watchlists.Add(new Watchlist()

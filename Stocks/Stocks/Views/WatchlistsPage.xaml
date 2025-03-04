@@ -3,14 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Stocks.Views.WatchlistsPage"
              x:Name="WatchlistsContentPage"
-             BackgroundColor="#2a2e36" >
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding CurrentWatchlist.Name}" Priority="0" />
-        <ToolbarItem Text="Search" Clicked="Search_Clicked" IconImageSource="search_icon_white.svg"  />
-    </ContentPage.ToolbarItems>
+             BackgroundColor="#2a2e36"
+             Shell.NavBarIsVisible="False">
 
     <VerticalStackLayout>
+
+        <FlexLayout Direction="Row" Padding="0,10" BackgroundColor="#272b32">
+            <Image Source="menu.png" Margin="8,0" HeightRequest="25" WidthRequest="25">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Menu_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Label x:Name="WATCHLIST_LABEL" Text="Watchlists" Margin="0" FontSize="21" FontAttributes="Bold" TextColor="FloralWhite" />
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Menu_Tapped"/>
+                </VerticalStackLayout.GestureRecognizers>
+            </VerticalStackLayout>
+
+            <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Image Source="plus.png" Margin="25,0" HeightRequest="30" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AddWatchlist_Clicked"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Image Source="search_icon_white.svg" Margin="0,0,20,0" HeightRequest="30" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Search_Clicked"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </VerticalStackLayout>
+            
+        </FlexLayout>
+
+
+
+
         <!--border-->
         <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="3" />
         <FlexLayout Direction="Row" BackgroundColor="#343a45" HeightRequest="1" />
@@ -19,11 +53,11 @@
         
         
 
-        <CollectionView x:Name="currentWatchlistCollection"
+        <CollectionView x:Name="CURRENT_WATCHLIST_COLLECTION"
                 ItemsSource="{Binding Watchlist}"
                 Margin="20"
                 SelectionMode="Single"
-                SelectionChanged="currentWatchlistCollection_SelectionChanged">
+                SelectionChanged="CURRENT_WATCHLIST_COLLECTION_SelectionChanged">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />

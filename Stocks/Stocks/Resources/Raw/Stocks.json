@@ -1,15 +1,17 @@
 [
   {
     "Ticker": "AAPL",
-    "Company": "Apple Inc"
+    "Company": "Apple Inc",
+    "ImageFileName": "aapl.png"
   },
   {
     "Ticker": "NVDA",
-    "Company": "NVIDIA Corp"
+    "Company": "Nvidia Corporation",
+    "ImageFileName": "nvda.png"
   },
   {
     "Ticker": "MSFT",
-    "Company": "Microsoft Corp"
+    "Company": "Microsoft Corporation"
   },
   {
     "Ticker": "AMZN",
@@ -73,7 +75,7 @@
   },
   {
     "Ticker": "CVX",
-    "Company": "Chevron Corp"
+    "Company": "Chevron Corporation"
   },
   {
     "Ticker": "ABBV",
@@ -89,7 +91,7 @@
   },
   {
     "Ticker": "KO",
-    "Company": "Coca-Cola Comp"
+    "Company": "Coca-Cola Company"
   },
   {
     "Ticker": "MRK",
@@ -101,7 +103,7 @@
   },
   {
     "Ticker": "INTC",
-    "Company": "Intel Corp"
+    "Company": "Intel Corporation"
   },
   {
     "Ticker": "CSCO",
@@ -117,7 +119,7 @@
   },
   {
     "Ticker": "XOM",
-    "Company": "Exxon Mobil Corp"
+    "Company": "Exxon Mobil Corporation"
   },
   {
     "Ticker": "WMT",
@@ -125,7 +127,7 @@
   },
   {
     "Ticker": "BAC",
-    "Company": "Bank of America Corp"
+    "Company": "Bank of America Corporation"
   },
   {
     "Ticker": "C",
@@ -157,7 +159,7 @@
   },
   {
     "Ticker": "QCOM",
-    "Company": "Qualcomm Incd"
+    "Company": "Qualcomm Inc"
   },
   {
     "Ticker": "TXN",
@@ -165,7 +167,7 @@
   },
   {
     "Ticker": "ORCL",
-    "Company": "Oracle Corp"
+    "Company": "Oracle Corporation"
   },
   {
     "Ticker": "IBM",
@@ -177,11 +179,11 @@
   },
   {
     "Ticker": "DHR",
-    "Company": "Danaher Corp"
+    "Company": "Danaher Corporation"
   },
   {
     "Ticker": "UNP",
-    "Company": "Union Pacific Corp"
+    "Company": "Union Pacific Corporation"
   },
   {
     "Ticker": "HON",
@@ -201,7 +203,7 @@
   },
   {
     "Ticker": "LMT",
-    "Company": "Lockheed Martin Corp"
+    "Company": "Lockheed Martin Corporation"
   },
   {
     "Ticker": "GE",
@@ -212,36 +214,33 @@
     "Company": "Raytheon Technologies Corp"
   },
   {
-    "Ticker": "NOC",
-    "Company": "Northrop Grumman Corp"
-  },
-  {
-    "Ticker": "SBUX",
-    "Company": "Starbucks Corp"
-  },
-  {
-    "Ticker": "MCD",
-    "Company": "McDonald's Corp"
-  },
-  {
     "Ticker": "NKE",
     "Company": "Nike, Inc"
   },
+  {
+    "Ticker": "SBUX",
+    "Company": "Starbucks Corporation"
+  },
+  {
+    "Ticker": "MCD",
+    "Company": "McDonald's Corporation"
+  },
+
   {
     "Ticker": "LOW",
     "Company": "Lowe's Companies, Inc"
   },
   {
     "Ticker": "TGT",
-    "Company": "Target Corp"
+    "Company": "Target Corporation"
   },
   {
     "Ticker": "COST",
-    "Company": "Costco Wholesale Corp"
+    "Company": "Costco Wholesale Corporation"
   },
   {
     "Ticker": "CVS",
-    "Company": "CVS Health Corp"
+    "Company": "CVS Health Corporation"
   },
   {
     "Ticker": "WBA",
@@ -325,7 +324,7 @@
   },
   {
     "Ticker": "TEAM",
-    "Company": "Atlassian Corp"
+    "Company": "Atlassian Corporation"
   },
   {
     "Ticker": "NOW",
@@ -370,5 +369,9 @@
   {
     "Ticker": "HOOD",
     "Company": "Robinhood Markets"
+  },
+  {
+    "Ticker": "NOC",
+    "Company": "Northrop Grumman Corporation"
   }
 ]

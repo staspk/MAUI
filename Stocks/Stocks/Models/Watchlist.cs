@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Stocks.Models
 {
-    internal class Watchlist
+    public class Watchlist
     {
         public string Name { get; set; }
         public int Order { get; set; }
         public List<string> Stocks { get; set; }
+
+        public Watchlist() { }
+        public Watchlist(string name)
+        {
+            this.Name = name;
+        }
     }
 }

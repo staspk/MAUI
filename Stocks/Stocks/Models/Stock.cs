@@ -9,17 +9,16 @@ namespace Stocks.Models
         public float? Price { get; set; }
         public string? ImageFileName { get; set; }
 
+        public Stock() { }
+        public Stock(string ticker)
+        {
+            Ticker = ticker;
+        }
+
         public Stock(string ticker, string company)
         {
             Ticker = ticker;
             Company = company;
         }
-
-        //public Dictionary<string, Stock> ConstructStockDictionary(JsonDocument json)
-        //{
-        //    Dictionary<string, Stock> stockDict = new Dictionary<string, Stock>();
-
-        //    using(var stockJson )
-        //}
     }
 }

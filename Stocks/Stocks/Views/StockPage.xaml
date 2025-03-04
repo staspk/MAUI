@@ -2,11 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Stocks.Views.StockPage"
-             Title="StockPage">
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+
+
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        
+        <FlexLayout Direction="Row" Padding="0" BackgroundColor="#272b32">
+            <Image Source="back.png" Margin="6,12,2,8" HeightRequest="30" WidthRequest="30">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Back_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <VerticalStackLayout MinimumHeightRequest="40" VerticalOptions="Center">
+                <Label x:Name="TICKER" Text="NVDA" Margin="6,0,0,0" FontSize="18" FontAttributes="Bold" TextColor="FloralWhite" />
+
+                <Label x:Name="COMPANY_NAME" Text="Nvidia Corporation" Margin="6,0,0,0"  FontSize="12" FontAttributes="None" TextColor="FloralWhite"/>
+            </VerticalStackLayout>
+
+            <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Image Source="search_icon_white.svg" Margin="0,0,25,0" HeightRequest="30" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Search_Clicked"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Image x:Name="ADD_FAVORITE_IMAGE" Source="favorite_add.png" Margin="0,0,20,0" HeightRequest="35" WidthRequest="28">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Favorite_Clicked"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </VerticalStackLayout>
+
+        </FlexLayout>
+
+        <FlexLayout Direction="Row" BackgroundColor="#272b32">
+            <VerticalStackLayout VerticalOptions="Center" Margin="10,0,0,0">
+                <Label x:Name="PRICE" Margin="0, -5" FontSize="40" FontAttributes="Bold" TextColor="#f44242" />
+                <FlexLayout Direction="Row">
+                    <Label x:Name="DOLLAR_DIFFERENCE" Margin="10,-2"  FontSize="18" FontAttributes="None" TextColor="#f44242"/>
+                    <Label x:Name="PERCENT_DIFFERENCE" Margin="0, -2"  FontSize="18" FontAttributes="None" TextColor="#f44242"/>
+                </FlexLayout>
+            </VerticalStackLayout>
+            <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+
+            <VerticalStackLayout WidthRequest="130" Margin="0,0,5,0" VerticalOptions="Center">
+                <FlexLayout Direction="Row">
+                    <Label Text="H/L" Margin="0"  FontSize="14" FontAttributes="None" TextColor="#e0e0e0"/>
+                    <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+                    <Label x:Name="DAYS_RANGE" Margin="0"  FontSize="13" FontAttributes="None" TextColor="FloralWhite"/>
+                </FlexLayout>
+
+                <FlexLayout Direction="Row">
+                    <Label Text="Vol" Margin="0"  FontSize="14" FontAttributes="None" TextColor="#e0e0e0"/>
+                    <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+                    <Label x:Name="VOLUME" Margin="0"  FontSize="13" FontAttributes="None" TextColor="#e0e0e0"/>
+                </FlexLayout>
+
+                <FlexLayout Direction="Row">
+                    <Label Text="Mkt Cap" Margin="0"  FontSize="14" FontAttributes="None" TextColor="#e0e0e0"/>
+                    <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
+                    <Label x:Name="MARKET_CAP" Margin="0"  FontSize="13" FontAttributes="None" TextColor="#e0e0e0"/>
+                </FlexLayout>
+
+
+            </VerticalStackLayout>
+            
+        </FlexLayout>
+
+
+
+
+        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="3" />
+        <FlexLayout Direction="Row" BackgroundColor="#343a45" HeightRequest="1" />
+        <FlexLayout Direction="Row" BackgroundColor="#272b32" HeightRequest="1" />
+
     </VerticalStackLayout>
+    
+    
+    
+
+    <!--border-->
+    
+    <!--border-->
+
+
+
 </ContentPage>
