@@ -8,7 +8,7 @@ public partial class WatchlistsPage : ContentPage
     {
         InitializeComponent();
 
-        BindingContext = new Watchlists();
+        BindingContext = ((AppShell)Shell.Current).Watchlists;
     }
 
     protected override void OnAppearing()
@@ -16,10 +16,10 @@ public partial class WatchlistsPage : ContentPage
         //((Models.Watchlists)BindingContext).watchlists.Count
 
 
-        if (((Models.Watchlists)BindingContext).watchlists.Count < 1)
+        if (((Models.WatchlistsViewModel)BindingContext).Watchlists.Count < 1)
             WatchlistsContentPage.Title = "Watchlists";
         else
-            WatchlistsContentPage.Title = ((Models.Watchlists)BindingContext).watchlists[0].Name;
+            WatchlistsContentPage.Title = ((Models.WatchlistsViewModel)BindingContext).Watchlists[0].Name;
     }
 
     private async void Search_Clicked(object sender, EventArgs e)
@@ -49,11 +49,11 @@ public partial class WatchlistsPage : ContentPage
                 }
             }
 
-            Watchlists.SaveNewWatchlist(new Watchlist(newWatchlistName));
+            WatchlistsViewModel.SaveNewWatchlist(new Watchlist(newWatchlistName));
 
             WATCHLIST_LABEL.Text = newWatchlistName;
 
-            ((Watchlists)BindingContext).CurrentWatchlist.Clear();
+            ((WatchlistsViewModel)BindingContext).CurrentWatchlist.Clear();
         }
     }
 

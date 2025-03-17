@@ -25,19 +25,17 @@
             <BoxView FlexLayout.Grow="1" BackgroundColor="Transparent" />
 
             <VerticalStackLayout VerticalOptions="Center">
-                <Image Source="plus.png" Margin="25,0" HeightRequest="30" WidthRequest="25">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="AddWatchlist_Clicked"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AddWatchlist_Clicked"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="plus.png" Margin="25,0" HeightRequest="30" WidthRequest="25"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout VerticalOptions="Center">
-                <Image Source="search_icon_white.svg" Margin="0,0,20,0" HeightRequest="30" WidthRequest="25">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Search_Clicked"/>
-                    </Image.GestureRecognizers>
-                </Image>
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Search_Clicked"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="search_icon_white.svg" Margin="0,0,20,0" HeightRequest="30" WidthRequest="25"/>
             </VerticalStackLayout>
             
         </FlexLayout>

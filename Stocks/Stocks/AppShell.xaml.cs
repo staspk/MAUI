@@ -8,15 +8,22 @@ namespace Stocks
 
     public partial class AppShell : Shell
     {
-        public IList<Stock> Stocks { get; set; }
+        public WatchlistsViewModel Watchlists { get; private set; }
+        public IList<Stock> Stocks { get; private set; }
 
-        public AppShell()       //((AppShell)App.Current)
+        public AppData AppData { get; private set; }
+
+        public AppShell()       // ((AppShell)App.Current)
         {
             InitializeComponent();
 
+            AppData = AppData.LoadAppDataFile();
+
             Stocks = App.DataLoader.LoadInMauiJsonAsset(Definitions.STOCKS_JSON).Result;
 
-            BindingContext = this;
+            Watchlists = new WatchlistsViewModel(Stocks);
+
+            BindingContext = Watchlists;
 
             Routing.RegisterRoute(nameof(Views.WatchlistsPage), typeof(Views.WatchlistsPage));
             Routing.RegisterRoute(nameof(Views.SearchPage), typeof(Views.SearchPage));
@@ -25,7 +32,7 @@ namespace Stocks
 
         protected async override void OnAppearing()
         {
-            
+            Console.WriteLine("Hey");
         }
 
 

@@ -1,36 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Stocks.Models
 {
-    internal class Watchlists
+    public class WatchlistsViewModel : INotifyPropertyChanged
     {
-        public List<Watchlist> watchlists { get; set; }
+        public List<Watchlist> Watchlists { get; set; }
         public ObservableCollection<Stock> CurrentWatchlist { get; set; } = new ObservableCollection<Stock>();
 
-        public Watchlists()
-        {
-            this.watchlists = LoadSavedWatchlists();
+        private IList<Stock> Stocks { get; set; }
 
-            if(this.watchlists.Count > 0)
-                LoadWatchlist(this.watchlists[0]);
+        private Watchlist _selectedWatchlist;
+        public Watchlist SelectedWatchlist
+        {
+            get => _selectedWatchlist;
+            set
+            {
+                if (_selectedWatchlist != value)
+                {
+                    _selectedWatchlist = value;
+                    OnPropertyChanged();
+                    LoadWatchlist(_selectedWatchlist);
+                }
+            }
         }
+
+        public WatchlistsViewModel(IList<Stock> stocks)
+        {
+            Stocks = stocks;
+            this.Watchlists = LoadSavedWatchlists();
+
+            
+
+
+            if(this.Watchlists.Count > 0)
+                LoadWatchlist(this.Watchlists[0]);
+        }
+
+        
 
         private void LoadWatchlist(Watchlist watchlist = null)
         {
             CurrentWatchlist.Clear();
 
-            var stocks = ((AppShell)Shell.Current).Stocks;
+            if (watchlist is null && Watchlists.Count > 0)
+            {
+                watchlist = this.Watchlists[0];
 
-            if (watchlist is null && watchlists.Count > 0)
-                watchlist = this.watchlists[0];
-
-            foreach (var stockStr in watchlist.Stocks)
-                CurrentWatchlist.Add(stocks.First(stock => stock.Ticker.ToUpper() == stockStr.ToUpper()));
+                foreach (var stockStr in watchlist.Stocks)
+                    CurrentWatchlist.Add(Stocks.First(stock => stock.Ticker.ToUpper() == stockStr.ToUpper()));
+            }
         }
 
         public static void SaveNewWatchlist(Watchlist watchlist)
@@ -74,9 +99,16 @@ namespace Stocks.Models
                     Order = int.Parse(lines[0]),
                     Stocks = lines.GetRange(1, lines.Count - 1)
                 });
+
+                //SelectedWatchlist = 
             }
 
             return watchlists.OrderBy(watchlist => watchlist.Order).ToList();
         }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string propName = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
     }
 }

@@ -11,6 +11,7 @@
             </ResourceDictionary.MergedDictionaries>
             
             <Color x:Key="PrimaryBackgroundColor">#f8f7ff</Color>
+            <Color x:Key="AccentColor">#24282e</Color>
             
         </ResourceDictionary>
     </Application.Resources>

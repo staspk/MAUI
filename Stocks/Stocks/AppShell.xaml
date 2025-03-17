@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:Stocks.Views"
+    xmlns:models="clr-namespace:Stocks.Models"
     BackgroundColor="#282c34"
     Shell.TitleColor="White"
     Shell.ForegroundColor="White"
@@ -14,7 +15,7 @@
     Shell.TabBarTitleColor="#f0fccc"
     Shell.FlyoutBackground ="#272b32"
     >
-
+    
     <Shell.FlyoutHeader>
         <StackLayout Padding="20" VerticalOptions="Center">
             <Label Text="My Watchlists" FontSize="20" FontAttributes="Bold" TextColor="WhiteSmoke" />
@@ -22,9 +23,43 @@
     </Shell.FlyoutHeader>
 
     <Shell.FlyoutContent>
-        <VerticalStackLayout MinimumHeightRequest="40" VerticalOptions="Center">
-            <Label x:Name="FLYOUT_WATCHLIST_NAME" Text="NVDA" Margin="6,0,0,0" FontSize="18" FontAttributes="Bold" TextColor="FloralWhite" />
-        </VerticalStackLayout>
+        <Grid RowDefinitions="Auto, *" Padding="0">
+            <CollectionView ItemsSource="{Binding watchlists}"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedWatchlist}"
+                            >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Watchlist">
+                        <VerticalStackLayout Padding="20">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Transparent"/>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="20" TextColor="FloralWhite" Text="{Binding Name}" />
+                                        <Span FontSize="17" TextColor="FloralWhite" Text="  (" />
+                                        <Span FontSize="17" TextColor="FloralWhite" Text="{Binding Stocks.Count}" />
+                                        <Span FontSize="17" TextColor="FloralWhite" Text=")" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
     </Shell.FlyoutContent>
     
     
